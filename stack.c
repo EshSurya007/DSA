@@ -114,6 +114,34 @@ int main()
      switch(choice)
      {
         case 1:
+        int num;
+        printf("Enter the element to push: ");
+        scanf("%d",&num);
+        push(num); // function call for the push
+        break;
+
+        case 2:
+        int data = pop(); // pop return the int value so to store we used the data var
+        printf("The Popped element:%d\n",data);
+        break;
+
+        case 3:
+        int peek_element = Peek();
+        printf("The Peek element:%d\n",peek_element);
+        break;
+
+        case 4:
+        display(); // function call to print all the elements
+        break;
+
+        case 5:
+        exit(1); // exited from the infiite loop or from the program
+        break;
+
+        default:
+        printf("Enter the valid choice\n");
+        break;
+
 
      }
    }
